@@ -1,8 +1,8 @@
-## Data-cleaning-course-project
+# Data-cleaning-course-project
 
 The following scrips can be run as long as the unziped Samsung data is in your working directory with the folder UCI HAR Dataset
-#Scrips breakdown
-<read relevant test and train files into R>
+##Scrips breakdown
+-read relevant test and train files into R-
 test <- read.table("UCI HAR Dataset/test/X_test.txt", header=T)
 testLabel <- read.table("UCI HAR Dataset/test/y_test.txt", header=T)
 testSub <- read.table("UCI HAR Dataset/test/subject_test.txt", header=T)
@@ -10,7 +10,7 @@ train <- read.table("UCI HAR Dataset/train/X_train.txt", header=T)
 trainSub <- read.table("UCI HAR Dataset/train/subject_train.txt", header=T)
 trainLabel <- read.table("UCI HAR Dataset/train/y_train.txt", header=T)
 
-<read feature file into R and make a list of all features>
+#read feature file into R and make a list of all features#
 feature <- read.table("UCI HAR Dataset/features.txt", header=TRUE)
 feature1 <- rbind(feature[1,], feature)
 feature2 <- feature1[,2]
