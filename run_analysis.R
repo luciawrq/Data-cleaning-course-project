@@ -1,3 +1,6 @@
+#The following scrips can be run as long as the unziped Samsung data is# 
+#in your working directory with the folder UCI HAR Dataset#
+
 test <- read.table("UCI HAR Dataset/test/X_test.txt", header=T)
 testLabel <- read.table("UCI HAR Dataset/test/y_test.txt", header=T)
 testSub <- read.table("UCI HAR Dataset/test/subject_test.txt", header=T)
