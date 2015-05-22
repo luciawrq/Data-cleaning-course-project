@@ -10,7 +10,7 @@ train <- read.table("UCI HAR Dataset/train/X_train.txt", header=T)
 trainSub <- read.table("UCI HAR Dataset/train/subject_train.txt", header=T)
 trainLabel <- read.table("UCI HAR Dataset/train/y_train.txt", header=T)
 
-#read feature file into R and make a list of all features#
+#######read feature file into R and make a list of all features#
 feature <- read.table("UCI HAR Dataset/features.txt", header=TRUE)
 feature1 <- rbind(feature[1,], feature)
 feature2 <- feature1[,2]
