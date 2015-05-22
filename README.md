@@ -17,7 +17,7 @@ feature2 <- feature1[,2]
 --assign features to the column names of test variables--   
 colnames(test) <- feature2 
 
---Extracts only the measurements on the mean and standard deviation of the test Data and adding subject ID and activity labels to the Data-- 
+--Extracts only the measurements on the mean and standard deviation of the test Data and adding subject ID and activity labels to the Data--  
 v.names <- c("mean()","std()")  
 test2 <- test[,grep(paste0(v.names, collapse="|"),colnames(test))]  
 test3 <- test2[,grep(paste0("Freq", collapse="|"),colnames(test2), invert=TRUE)]  
