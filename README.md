@@ -15,7 +15,7 @@ feature <- read.table("UCI HAR Dataset/features.txt", header=TRUE)
 feature1 <- rbind(feature[1,], feature)
 feature2 <- feature1[,2]
 
-<assign features to the column names of test variables>  
+=assign features to the column names of test variables=  
 colnames(test) <- feature2
 
 <Extracts only the measurements on the mean and standard deviation of the test Data and adding subject ID and activity labels to the Data> 
